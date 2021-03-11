@@ -3,7 +3,7 @@ import http from 'k6/http';
 
 export default function() {
   const responses = http.batch([
-    `${__ENV.BACKEND_BASE_URL}/api/v1/aia-tottenham/zn-Ch/voting`,
+    `${__ENV.BACKEND_BASE_URL}/api/v1/aia-tottenham/zh-CN/layout`,
   ]);
 
   check(responses[0], {
