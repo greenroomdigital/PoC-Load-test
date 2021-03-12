@@ -9,7 +9,7 @@ export default function () {
     vote: faker.random.uuid(),
     ssFormId: faker.random.uuid(),
     contact: {
-      email: faker.internet.email(),
+      phone: faker.phone.phoneNumber(),
       other_contact_info: faker.lorem.sentence(),
     },
   });
